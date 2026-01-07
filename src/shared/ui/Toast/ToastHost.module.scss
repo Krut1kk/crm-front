@@ -1,0 +1,36 @@
+
+.root {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 1000;
+}
+
+.toast {
+  @include flex(center, center, row, 10px);
+  padding: 10px 12px;
+  border-radius: 12px;
+
+  border: 1px solid #2b2b2f;
+  background: #1b1b1f;
+
+  @include font(#ededed, 13px, 600, 16px);
+}
+
+.toast.success {
+  border-color: #45d697;
+  background: #122a20;
+  color: #45d697;
+}
+
+.text {
+  white-space: nowrap;
+}
+
+.close {
+  @include button();
+  background: transparent;
+  color: #ededed;
+  font-size: 18px;
+  line-height: 18px;
+}

@@ -1,0 +1,45 @@
+.input {
+  display: block;
+  width: 100%;
+
+  .label {
+    display: block;
+    margin-bottom: 6px;
+    @include font(#9ca3af, 12px, 600, 12px);
+  }
+
+  .control {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+
+    border-radius: 12px;
+    border: 1px solid #26272b;
+    background: #131316;
+
+    @include font(#ffffff, 14px, 400, 14px);
+
+    outline: none;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+
+    &::placeholder {
+      color: #9ca3af;
+    }
+
+    &:focus {
+      border-color: #426bc2;
+    }
+  }
+
+  &[data-error="true"] {
+    .control {
+      border-color: #ef4444;
+    }
+  }
+
+  .error {
+    display: block;
+    margin-top: 6px;
+    @include font(#ef4444, 12px, 500, 12px);
+  }
+}

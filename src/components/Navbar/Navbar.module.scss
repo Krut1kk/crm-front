@@ -1,0 +1,47 @@
+.Navbar {
+  width: 100%;
+  max-width: 200px;
+  background-color: #27272a;
+  position: sticky;
+  top: 0;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+.logoIcon {
+  color: #fff;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+}
+.bottom {
+  margin-top: auto;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lang {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.logout {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.82);
+  cursor: pointer;
+}

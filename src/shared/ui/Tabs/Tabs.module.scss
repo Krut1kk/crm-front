@@ -1,0 +1,33 @@
+.Tabs {
+  border-radius: $fullRounded;
+  background-color: transparent;
+  border: 1px solid #26272b;
+  padding: 4px;
+
+  @include flex(stretch, flex-start, row, 4px);
+
+  .tab {
+    flex: 1;
+    padding: 12px 16px;
+
+    border: 0;
+    border-radius: $fullRounded;
+    background: transparent;
+
+    cursor: pointer;
+
+    font: inherit;
+    color: rgba(255, 255, 255, 0.72);
+    transition: background 120ms ease, color 120ms ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.86);
+    }
+
+    &.active {
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.92);
+    }
+  }
+}

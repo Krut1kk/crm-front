@@ -1,0 +1,12 @@
+.page {
+  min-height: 100vh;
+  padding: 24px;
+
+  @include flex(center, center);
+
+  background:
+    radial-gradient(900px 420px at 15% 10%, rgba(82, 165, 229, 0.22), transparent 60%),
+    radial-gradient(900px 420px at 85% 20%, rgba(82, 165, 229, 0.16), transparent 60%),
+    #0b1220;
+
+}

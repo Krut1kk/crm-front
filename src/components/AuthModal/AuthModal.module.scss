@@ -1,0 +1,45 @@
+.card {
+  width: 420px;
+  padding: 32px;
+  border-radius: 16px;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  .head {
+      margin-bottom: 14px;
+      text-align: center;
+
+      .title {
+        margin: 0;
+        @include font(#ffffff, 28px, 700, 32px);
+      }
+
+      .subtitle {
+        margin: 8px 0 0;
+        @include font(rgba(255, 255, 255, 0.7), 14px, 400, 20px);
+      }
+    }
+
+    .fields {
+      @include flex(stretch, flex-start, column, 12px);
+    }
+
+    .submit {
+      width: 100%;
+      margin-top: 16px;
+    }
+}
+
+
+.submit {
+  margin-top: 8px;
+}
+
+.switch {
+  background: none;
+  border: none;
+  color: #7aa2ff;
+  cursor: pointer;
+  font-size: 14px;
+}

@@ -1,0 +1,47 @@
+.link {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  @include flex(center, flex-start, row, 12px);
+
+  color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  transition:
+    background 150ms ease,
+    border-color 150ms ease,
+    color 150ms ease,
+    transform 150ms ease;
+
+  .icon {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+
+    color: currentColor;
+    opacity: 0.9;
+
+    transition: opacity 150ms ease;
+  }
+
+  .label {
+    @include font(rgba(255, 255, 255, 0.72), 13px, 600, 16px);
+    letter-spacing: 0.2px;
+  }
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0);
+  }
+
+  &.active {
+    color: #ffffff;
+    background: rgba(168, 85, 247, 0.16);
+    border-color: rgba(168, 85, 247, 0.28);
+  }
+}

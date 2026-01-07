@@ -1,0 +1,13 @@
+.Select {
+  width: 100%;
+  border-radius: $fullRounded;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #27272a;
+padding: 4px;
+text-decoration: none;
+option{
+  border: 1px solid none;
+  background-color: #27272a;
+}
+}

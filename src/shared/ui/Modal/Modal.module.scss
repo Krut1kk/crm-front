@@ -1,0 +1,121 @@
+
+.Modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: grid;
+  place-items: center;
+
+  padding: 24px;
+
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(6px);
+
+  .content {
+    width: 100%;
+    max-width: 560px;
+
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    background: rgba(20, 20, 24, 0.92);
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.55);
+
+    padding: 18px 18px 16px;
+  }
+
+  .header {
+    @include flex(center, space-between, row, 12px);
+
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    .title {
+      margin: 0;
+      @include font(rgba(255, 255, 255, 0.92), 16px, 600, 20px);
+    }
+
+    .close {
+      @include button();
+
+      width: 32px;
+      height: 32px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+
+      background: rgba(255, 255, 255, 0.04);
+      @include font(rgba(255, 255, 255, 0.78), 16px, 600, 1);
+
+      transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.16);
+        color: rgba(255, 255, 255, 0.92);
+      }
+    }
+  }
+
+  .body {
+    padding-top: 14px;
+  }
+
+  .actions {
+    margin-top: 16px;
+
+    @include flex(center, flex-end, row, 10px);
+
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+    .cancel,
+    .save {
+      @include button();
+
+      height: 36px;
+      padding: 0 14px;
+
+      border-radius: 10px;
+      border: 1px solid transparent;
+
+      transition: background 120ms ease, border-color 120ms ease, color 120ms ease;
+    }
+
+    .cancel {
+      background: rgba(255, 255, 255, 0.06);
+      border-color: rgba(255, 255, 255, 0.10);
+      @include font(rgba(255, 255, 255, 0.82), 14px, 500, 14px);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.10);
+        border-color: rgba(255, 255, 255, 0.16);
+      }
+    }
+
+    .save {
+      background: rgba(88, 101, 242, 0.95);
+      border-color: rgba(88, 101, 242, 0.95);
+      @include font(rgba(255, 255, 255, 0.95), 14px, 600, 14px);
+
+      &:hover {
+        background: rgba(88, 101, 242, 1);
+        border-color: rgba(88, 101, 242, 1);
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 14px;
+
+    .content {
+      max-width: 100%;
+      border-radius: 14px;
+      padding: 16px 14px 14px;
+    }
+  }
+}

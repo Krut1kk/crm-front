@@ -1,0 +1,16 @@
+@use "./reset.scss";
+@use "./variables.scss";
+@use "./mixins.scss";
+@use "./fonts.scss";
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}

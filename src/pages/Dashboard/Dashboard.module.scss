@@ -1,0 +1,18 @@
+.page {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.tabs {
+  max-width: 420px;
+}
+.search {
+  max-width: 320px;
+}

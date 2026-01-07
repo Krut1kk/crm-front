@@ -1,0 +1,54 @@
+.badge {
+  @include flex(center, center);
+  display: inline-flex;
+
+  padding: 6px 10px;
+  border-radius: 999px;
+
+  @include font(rgba(255, 255, 255, 0.86), 12px, 600, 1);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+
+  &.sale {
+    background: rgba(122, 162, 255, 0.12);
+    border-color: rgba(122, 162, 255, 0.28);
+    color: rgba(122, 162, 255, 1);
+  }
+
+  &.purchase {
+    background: rgba(255, 184, 77, 0.12);
+    border-color: rgba(255, 184, 77, 0.28);
+    color: rgba(255, 184, 77, 1);
+  }
+
+  &.draft {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(255, 255, 255, 0.18);
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &.pending {
+    background: rgba(153, 6, 194, 0.12);
+    border-color: rgba(244, 1, 236, 0.28);
+    color: rgb(146, 6, 148);
+  }
+
+  &.success {
+    background: rgba(69, 214, 151, 0.12);
+    border-color: rgba(69, 214, 151, 0.28);
+    color: rgba(69, 214, 151, 1);
+  }
+
+  &.failed {
+    background: rgba(255, 107, 107, 0.12);
+    border-color: rgba(255, 107, 107, 0.28);
+    color: rgba(255, 107, 107, 1);
+  }
+
+  &.canceled {
+    background: rgba(255, 107, 107, 0.12);
+    border-color: rgba(255, 107, 107, 0.28);
+    color: rgba(255, 107, 107, 1);
+  }
+}
