@@ -23,8 +23,5 @@
 
 ### Backend
 
-cd back
-npm install
-
-    Если увидишь ошибку вида **"Prisma Client has not been generated"**, тогда просто выполни: `npx prisma generate`
+Если увидишь ошибку вида Prisma Client has not been generated, тогда просто выполни: npx prisma generate
 
